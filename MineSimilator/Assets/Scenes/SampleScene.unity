@@ -15480,6 +15480,7 @@ MonoBehaviour:
   showValuePanel: {fileID: 1259268278}
   mainMenuPanel: {fileID: 244952084}
   gridTexts:
+  - {fileID: 128944219}
   - {fileID: 1634603574}
   - {fileID: 1427487935}
   - {fileID: 459725948}
@@ -15499,7 +15500,7 @@ MonoBehaviour:
   - {fileID: 1523570997}
   - {fileID: 2069166222}
   - {fileID: 1891128887}
-  - {fileID: 1741352183}
+  - {fileID: 772975385}
   - {fileID: 1280152497}
   - {fileID: 1464060499}
   - {fileID: 808100129}
@@ -15513,6 +15514,7 @@ MonoBehaviour:
   - {fileID: 1495973147}
   - {fileID: 128944219}
   stationTexts:
+  - {fileID: 670236059}
   - {fileID: 1626601864}
   - {fileID: 1626601863}
   - {fileID: 1626601862}

@@ -70,7 +70,6 @@ public class TagManager : Singleton<TagManager>
                     for (int x = 0; x < mineRecieverList.Count; x++)
                     {
                         mineRecieverList[x].recieverName=readData.signalList[x].name;
-                        Debug.Log(mineRecieverList[x].recieverName);
                         if (mineRecieverList[x].recieverName == fin[3])
                         {
                             //mineRecieverList[x].signalCount = Convert.ToInt32(fin[2]);

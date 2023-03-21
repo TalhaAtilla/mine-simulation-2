@@ -132,11 +132,6 @@ public class ReadData : MonoBehaviour
             secondPosZ = z1;
             secondSignal = bigSignal;
         }
-
-        Debug.Log(bigSignal); 
-       Debug.Log(secondBigSignal);
-       Debug.Log(bigPos);
-       Debug.Log(secondBigPos);
         var desPosz = ((Math.Abs(firstPosZ - secondPosZ)) * (secondSignal / (firstSignal + secondSignal)) + firstPosZ);
         var desPosx = ((Math.Abs(firstPosX - secondPosX)) * (secondSignal / (firstSignal + secondSignal)) + firstPosX);
         var desPosy = ((Math.Abs(firstPosY - secondPosY)) * (firstSignal / (firstSignal + secondSignal)) + firstPosY);
@@ -148,9 +143,7 @@ public class ReadData : MonoBehaviour
         //Math.Abs(firstPos.transform.position.z-secondPos.transform.position.z)*(secondSignal/(firstSignal+secondSignal))+firstPos.transform.position.z
         //);
         var desPos = new Vector3(desPosx, desPosy, desPosz);
-       Debug.Log(desPos);
        desPos=path.path.GetClosestPointOnPath(desPos);
-       Debug.Log(desPos);
        LeanTween.move(miner,desPos,.5f).setEaseInCubic().setOnComplete(()=>
        {
            bigSignal=0;
@@ -205,9 +198,6 @@ public class ReadData : MonoBehaviour
            firstSignal=bigSignal;
            secondSignal=secondBigSignal;
        }
-
-       Debug.Log(bigSignal);
-       Debug.Log(secondBigSignal);
         
     }
 
